@@ -1,0 +1,265 @@
+
+Starting Nmap 7.50 ( https://nmap.org ) at 2017-09-09 13:11 Eastern Daylight Time
+Nmap scan report for 192.168.1.26
+Host is up (0.0031s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+23/tcp open  telnet?
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest, HTTPOptions, Kerberos, LPDString, RTSPRequest, SSLSessionReq: 
+|     WRONG COMMAND
+|   Help: 
+|     AVAILABLE COMMANDS
+|     ------------------
+|     RESO
+|     OSDDIS
+|     OSDH
+|     OSDV
+|     OSDTIME
+|     OSDGAIN
+|     HSIZE
+|     VSIZE
+|     HPOS
+|     VPOS
+|     IMAGE
+|     LABEL
+|     STORE
+|     RECALL
+|     MIRROR
+|     FADE
+|     ROTATE
+|     CHRC
+|     CHRSW
+|     IPMODE
+|     IPADD
+|     MAADD
+|     GAADD
+|     ETHTIME
+|     RELINK
+|     DEFAULT
+|     VICH
+|     MUTE
+|     AUDIO
+|     IMRE
+|     PIRE
+|     CHRE
+|     WICORE
+|     RIPM
+|     IPCONFIG
+|     HELP
+|     WND001
+|     WND002
+|     WND003
+|     WND004
+|     WND005
+|     WND006
+|     WND007
+|     WND008
+|     CH1001
+|     CH1002
+|     CH1003
+|     CH1004
+|     CH2001
+|     CH2002
+|     CH2003
+|     CH2004
+|     CH3001
+|     CH3002
+|     CH3003
+|     CH3004
+|     CH4001
+|     CH4002
+|     CH4003
+|     CH4004
+|     IO1000
+|     IO1001
+|     IO2000
+|     IO2001
+|     IO3000
+|     IO3001
+|     IO4000
+|     IO4001
+|     MUT000
+|     MUT001
+|     AUD001
+|     AUD002
+|     AUD003
+|     AUD004
+|     FAD000
+|     FAD001
+|     CHR000
+|     CHR001
+|     MIR000
+|     MIR001
+|     ROT000
+|     ROT001
+|     ROT002
+|     ROT003
+|     SFA001
+|     SFA002
+|     SFA003
+|     SFA004
+|     RFA001
+|   LDAPSearchReq, TLSSessionReq: 
+|     WRONG COMMAND
+|     WRONG COMMAND
+|   SIPOptions: 
+|     WRONG COMMAND
+|     WRONG COMMAND
+|     WRONG COMMAND
+|     WRONG COMMAND
+|     WRONG COMMAND
+|     WRONG COMMAND
+|     WRONG COMMAND
+|     WRONG COMMAND
+|_    WRONG COMMAND
+80/tcp open  http    gef/1.0 http://www.gefen.com/
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     Cache-Control: no-cache
+|     Content-type: text/html
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta charset="utf-8">
+|     <title> </title>
+|     <link rel="stylesheet" href="css/styles.css" media="screen">
+|     <link rel="stylesheet" href="css/jquerymin.css" media="screen">
+|     <script type="text/javascript" src="js/jquerymin.js"></script>
+|     <script type="text/javascript" src="js/jqueryblockUI.js"></script>
+|     <script type="text/javascript" src="js/top.js"></script>
+|     <script type="text/javascript" src="js/jqueryuitouch.js"></script>
+|     </head>
+|     <body>
+|     <div id="header">
+|     </div>
+|     id="hrcs">
+|     <div id="All_body">
+|     <div id="i_menu" ondragstart="return false" onselectstart="return false" onContextMenu="return false"></div
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not found
+|     Server: gef/1.0 http://www.gefen.com/
+|     Connection: close
+|     Accept-Ranges: bytes
+|     Content-Type: application/octet-stream
+|     Content-Disposition: attachment
+|   RTSPRequest: 
+|     HTTP/1.0 404 Not found
+|     Server: gef/1.0 http://www.gefen.com/
+|     Connection: close
+|     Accept-Ranges: bytes
+|     Content-Type: application/octet-stream
+|     Content-Disposition: attachment
+|     \xc3
+|_    \xc4
+|_http-server-header: gef/1.0 http://www.gefen.com/
+|_http-title:  
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port23-TCP:V=7.50%I=7%D=9/9%Time=59B420F9%P=i686-pc-windows-windows%r(G
+SF:etRequest,F,"WRONG\x20COMMAND\r\n")%r(HTTPOptions,F,"WRONG\x20COMMAND\r
+SF:\n")%r(RTSPRequest,F,"WRONG\x20COMMAND\r\n")%r(Help,2F3,"\r\nAVAILABLE\
+SF:x20COMMANDS\r\n------------------\r\nRESO\r\nOSDDIS\r\nOSDH\r\nOSDV\r\n
+SF:OSDTIME\r\nOSDGAIN\r\nBRI\r\nCON\r\nSAT\r\nHUE\r\nHSIZE\r\nVSIZE\r\nHPO
+SF:S\r\nVPOS\r\nIMAGE\r\nPRI\r\nLABEL\r\nSTORE\r\nRECALL\r\nMIRROR\r\nFADE
+SF:\r\nROTATE\r\nCHRC\r\nCHRSW\r\nIPMODE\r\nIPADD\r\nMAADD\r\nGAADD\r\nETH
+SF:TIME\r\nRELINK\r\nDEFAULT\r\nVICH\r\nMUTE\r\nPOW\r\nAUDIO\r\nIMRE\r\nPI
+SF:RE\r\nCHRE\r\nWICORE\r\nRIPM\r\nIPCONFIG\r\nHELP\r\n\?\r\nWND001\r\nWND
+SF:002\r\nWND003\r\nWND004\r\nWND005\r\nWND006\r\nWND007\r\nWND008\r\nCH10
+SF:01\r\nCH1002\r\nCH1003\r\nCH1004\r\nCH2001\r\nCH2002\r\nCH2003\r\nCH200
+SF:4\r\nCH3001\r\nCH3002\r\nCH3003\r\nCH3004\r\nCH4001\r\nCH4002\r\nCH4003
+SF:\r\nCH4004\r\nIO1000\r\nIO1001\r\nIO2000\r\nIO2001\r\nIO3000\r\nIO3001\
+SF:r\nIO4000\r\nIO4001\r\nMUT000\r\nMUT001\r\nAUD001\r\nAUD002\r\nAUD003\r
+SF:\nAUD004\r\nFAD000\r\nFAD001\r\nCHR000\r\nCHR001\r\nMIR000\r\nMIR001\r\
+SF:nROT000\r\nROT001\r\nROT002\r\nROT003\r\nSFA001\r\nSFA002\r\nSFA003\r\n
+SF:SFA004\r\nRFA001\r\n")%r(SSLSessionReq,F,"WRONG\x20COMMAND\r\n")%r(TLSS
+SF:essionReq,1E,"WRONG\x20COMMAND\r\nWRONG\x20COMMAND\r\n")%r(Kerberos,F,"
+SF:WRONG\x20COMMAND\r\n")%r(FourOhFourRequest,F,"WRONG\x20COMMAND\r\n")%r(
+SF:LPDString,F,"WRONG\x20COMMAND\r\n")%r(LDAPSearchReq,1E,"WRONG\x20COMMAN
+SF:D\r\nWRONG\x20COMMAND\r\n")%r(SIPOptions,87,"WRONG\x20COMMAND\r\nWRONG\
+SF:x20COMMAND\r\nWRONG\x20COMMAND\r\nWRONG\x20COMMAND\r\nWRONG\x20COMMAND\
+SF:r\nWRONG\x20COMMAND\r\nWRONG\x20COMMAND\r\nWRONG\x20COMMAND\r\nWRONG\x2
+SF:0COMMAND\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.50%I=7%D=9/9%Time=59B420E7%P=i686-pc-windows-windows%r(G
+SF:etRequest,78C,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\n\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0Cache-Control:\x20no-cache\r\nContent-type:\x20text/html\r\n\r\n
+SF:<!DOCTYPE\x20html>\r\n<html>\r\n\x20\x20\x20\x20<head>\r\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\r\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20<title>\x20</title>\r\n\x20\x20\x20\x20\x20\x20\x20\x20<link
+SF:\x20rel=\"stylesheet\"\x20href=\"css/styles\.css\"\x20media=\"screen\">
+SF:\r\n\x20\x20\x20\x20\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20href
+SF:=\"css/jquerymin\.css\"\x20media=\"screen\">\r\n\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20<script\x20type=\"text/javascript\"\x20src=\"js/jquerymin\.js\
+SF:"></script>\r\n\x20\x20\x20\x20\x20\x20\x20\x20<script\x20type=\"text/j
+SF:avascript\"\x20src=\"js/jqueryblockUI\.js\"></script>\r\n\x20\x20\x20\x
+SF:20\x20\x20\x20\x20<script\x20type=\"text/javascript\"\x20src=\"js/top\.
+SF:js\"></script>\r\n\x20\x20\x20\x20\x20\x20\x20\x20<script\x20type=\"tex
+SF:t/javascript\"\x20src=\"js/jqueryuitouch\.js\"></script>\r\n\x20\x20\x2
+SF:0\x20</head>\r\n\x20\x20\x20\x20<body>\r\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20<div\x20id=\"header\">\r\n\r\n\x20\x20\x20\x20\x20\x20\x20\x20</div>
+SF:\r\n\x20\x20\x20\x20\x20\x20\x20\x20<Hr\x20id=\"hrcs\">\r\n\x20\x20\x20
+SF:\x20\x20\x20\x20\x20<div\x20id=\"All_body\">\r\n\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20<div\x20id=\"i_menu\"\x20ondragstart=\"return\
+SF:x20false\"\x20onselectstart=\"return\x20false\"\x20onContextMenu=\"retu
+SF:rn\x20false\"></div")%r(HTTPOptions,B3,"HTTP/1\.0\x20404\x20Not\x20foun
+SF:d\r\nServer:\x20gef/1\.0\x20http://www\.gefen\.com/\r\nConnection:\x20c
+SF:lose\r\nAccept-Ranges:\x20bytes\r\nContent-Type:\x20application/octet-s
+SF:tream\r\nContent-Disposition:\x20attachment\r\n\r\n")%r(RTSPRequest,10B
+SF:3,"HTTP/1\.0\x20404\x20Not\x20found\r\nServer:\x20gef/1\.0\x20http://ww
+SF:w\.gefen\.com/\r\nConnection:\x20close\r\nAccept-Ranges:\x20bytes\r\nCo
+SF:ntent-Type:\x20application/octet-stream\r\nContent-Disposition:\x20atta
+SF:chment\r\n\r\n\0\0\0\0P5\0\x20\xe2\xb6\x07\0\xb3\0\0\0\x885\0\x20\0\0\0
+SF:\0\x006\0\x20\xbd\xec\0\x20\0\0\x01\x0086\0\x20\xd8\xc2\0\x204@\0\x20\$
+SF:\xce\0\x20\0\x04\0\0l@\0\x20\xd4\xc1\0\x20h7\0\x20\xb0\xd2\0\x20\0\0\x0
+SF:1\0\xa07\0\x20L\xc2\0\x20\xe0\?\0\x20\$\xca\0\x20\0\x04\0\0\x18@\0\x20\
+SF:xc0\xc1\0\x20\xcc>\0\x20\$\xc2\0\x20\0\x04\0\0\x04\?\0\x20\xc4\xc2\0\x2
+SF:0\xcc>\0\x20\$\xc2\0\x20\0\x04\0\0\x04\?\0\x20\xfc\xc1\0\x20\xc88\0\x20
+SF:L6\0\x20\0\0\x01\0\x009\0\x20t\xc2\0\x20\x20\?\0\x20\$\xc6\0\x20\0\x04\
+SF:0\0X\?\0\x20\x10\xc2\0\x20\x88@\0\x20\$\xd2\0\x20\0\x04\0\0\xc0@\0\x20\
+SF:0\0\0\0\0\0\0\0\xec\xc2\0\x20\0\0\0\0\xf4\xc2\0\x20\0\0\0\0\xfc\xc2\0\x
+SF:20\0\0\0\0\x04\xc3\0\x20\0\0\0\0\x0c\xc3\0\x20\0\0\0\0\x14\xc3\0\x20\0\
+SF:0\0\0\x1c\xc3\0\x20\0\0\0\0\$\xc3\0\x20\0\0\0\0,\xc3\0\x20\0\0\0\x004\x
+SF:c3\0\x20\0\0\0\0<\xc3\0\x20\0\0\0\0D\xc3\0\x20\0\0\0\0L\xc3\0\x20\0\0\0
+SF:\0T\xc3\0\x20\0\0\0\0\\\xc3\0\x20\0\0\0\0d\xc3\0\x20\0\0\0\0l\xc3\0\x20
+SF:\0\0\0\0t\xc3\0\x20\0\0\0\0\|\xc3\0\x20\0\0\0\0\x84\xc3\0\x20\0\0\0\0\x
+SF:8c\xc3\0\x20\0\0\0\0\x94\xc3\0\x20\0\0\0\0\x9c\xc3\0\x20\0\0\0\0\xa4\xc
+SF:3\0\x20\0\0\0\0\xac\xc3\0\x20\0\0\0\0\xb4\xc3\0\x20\0\0\0\0\xbc\xc3\0\x
+SF:20\0\0\0\0\xc4\xc3\0\x20\0\0\0\0\xcc\xc3\0\x20\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\xdc\xc3\0\x20\0\0\0\0\0\0\0\0\0\0\0\0\xec\xc3\0\x20\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\xfc\xc3\0\x20\0\0\0\0\0\0\0\0\0\0\0\0\x0c\xc4\0\x2
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\x1c\xc4\0\x20\0\0\0\0\0\0\0\0\0\0\0\0,\xc4\0\
+SF:x20\0\0\0\0\0\0\0\0\0\0\0\0<\xc4\0\x20\xb0\xc2\0\x20\0\x04\0\x04\x01\0\
+SF:0\0\|\xc4\0\x20\xbd\xe8\0\x20\0\x04\0\x04\x01\0\0\0\0\0\0\0\$\xc6\0\x20
+SF:\0\x04\0\x04\x01\0\x01\0L\xc4\0\x20l\xe5\0\x20Q\x03Q\x03\x01\0\0\0\xbc\
+SF:xc4\0\x20\xb0\xd2\0\x20\0\x04\0\x04\x01\0\0\0\0\0\0\0\$\xc2\0\x20\0\x04
+SF:\0\x04\x01\0\x01\0\xcc\xc4\0\x20V\xda\0\x20\0\x04\0\x04\x01\0\0\0\\\xc4
+SF:\0\x20\xbd\xec\0\x20\|\x02\|\x02\x01\0\0\0\x8c\xc4\0\x20\xb0\xd6\0\x20\
+SF:xa6\x03\xa6\x03\x01\0\0\0\0\0\0\0\$\xce\0\x20\0\x04\0\x04\x01\0\x01\0\x
+SF:ac\xc4\0\x20\$\xc2\0\x20\0");
+MAC Address: F8:22:85:09:09:25 (Cypress Technology)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.50%E=4%D=9/9%OT=23%CT=1%CU=36035%PV=Y%DS=1%DC=D%G=Y%M=F82285%TM
+OS:=59B421A8%P=i686-pc-windows-windows)SEQ(SP=9F%GCD=1%ISR=BD%TI=I%CI=I%II=
+OS:RI%SS=O%TS=U)SEQ(SP=9D%GCD=1%ISR=BD%TI=RD%CI=I%II=RI%TS=U)SEQ(CI=I%II=RI
+OS:)OPS(O1=M400%O2=M400%O3=M400%O4=M400%O5=M400%O6=M400)WIN(W1=800%W2=800%W
+OS:3=800%W4=800%W5=800%W6=800)ECN(R=Y%DF=N%T=FF%W=800%O=M400%CC=N%Q=)ECN(R=
+OS:N)T1(R=Y%DF=N%T=FF%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=N%T=FF%W=800%S
+OS:=O%A=S+%F=AS%O=M400%RD=0%Q=)T3(R=N)T4(R=Y%DF=N%T=FF%W=800%S=A+%A=S%F=AR%
+OS:O=%RD=0%Q=)T5(R=Y%DF=N%T=FF%W=800%S=A%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=N%T
+OS:=FF%W=800%S=A%A=S%F=AR%O=%RD=0%Q=)T7(R=Y%DF=N%T=FF%W=800%S=A%A=S+%F=AR%O
+OS:=%RD=0%Q=)U1(R=Y%DF=N%T=FF%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G
+OS:)IE(R=Y%DFI=S%T=FF%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   3.13 ms 192.168.1.26
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 205.41 seconds

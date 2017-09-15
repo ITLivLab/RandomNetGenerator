@@ -1,0 +1,53 @@
+
+Starting Nmap 7.50 ( https://nmap.org ) at 2017-09-09 13:19 Eastern Daylight Time
+Nmap scan report for 192.168.1.35
+Host is up (0.0059s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE        VERSION
+22/tcp   open  ssh            OpenSSH 7.4 (protocol 2.0; HPN-SSH patch 14v5)
+| ssh-hostkey: 
+|   2048 0b:ee:36:cc:77:2e:5c:7d:8c:a3:46:9c:f5:e2:43:77 (RSA)
+|   256 e2:6f:19:31:31:6c:8c:7d:d2:16:a0:09:32:92:98:5a (ECDSA)
+|_  256 5e:c1:ef:b1:27:3f:6d:8d:e3:2d:97:bd:e7:9c:e8:5e (EdDSA)
+80/tcp   open  http           nginx 1.10.1
+|_http-server-header: nginx/1.10.1
+| http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_Requested resource was /account/login/?next=/
+111/tcp  open  rpcbind        2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/7  rpcbind
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100003  2,3         2049/tcp  nfs
+|   100005  1,3          749/tcp  mountd
+|   100005  1,3          749/udp  mountd
+|   100021  0,1,3,4      981/udp  nlockmgr
+|   100021  0,1,3,4     1014/tcp  nlockmgr
+|   100024  1            960/tcp  status
+|_  100024  1            960/udp  status
+749/tcp  open  mountd         1-3 (RPC #100005)
+2049/tcp open  nfs            2-3 (RPC #100003)
+8300/tcp open  ssl/consul-rpc HashiCorp Consul RPC
+MAC Address: 88:51:FB:41:65:20 (Hewlett Packard)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.50%E=4%D=9/9%OT=22%CT=1%CU=37971%PV=Y%DS=1%DC=D%G=Y%M=8851FB%TM
+OS:=59B422D5%P=i686-pc-windows-windows)SEQ(SP=103%GCD=1%ISR=10B%TI=Z%CI=Z%I
+OS:I=RI%TS=21)OPS(O1=M5B4NW6ST11%O2=M578NW6ST11%O3=M280NW6NNT11%O4=M5B4NW6S
+OS:T11%O5=M218NW6ST11%O6=M109ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FF
+OS:FF%W6=FFFF)ECN(R=Y%DF=Y%T=40%W=FFFF%O=M5B4NW6SLL%CC=Y%Q=)T1(R=Y%DF=Y%T=4
+OS:0%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=FFFF%S=O%A=S+%F=AS%O=M
+OS:109NW6ST11%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=40%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   5.87 ms 192.168.1.35
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 36.41 seconds

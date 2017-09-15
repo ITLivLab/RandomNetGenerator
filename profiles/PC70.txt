@@ -1,0 +1,61 @@
+
+Starting Nmap 7.50 ( https://nmap.org ) at 2017-09-09 13:37 Eastern Daylight Time
+Nmap scan report for 192.168.1.70
+Host is up (0.0043s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Apache httpd 1.3.28 ((Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 5 disallowed entries 
+|_/cgi-bin /scanbot /backup /supplier /upload
+|_http-server-header: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+|_http-title: Welcome to BadStore.net v1.2.3s
+443/tcp  open  ssl/http Apache httpd 1.3.28 ((Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 5 disallowed entries 
+|_/cgi-bin /scanbot /backup /supplier /upload
+|_http-server-header: Apache/1.3.28 (Unix) mod_ssl/2.8.15 OpenSSL/0.9.7c
+|_http-title: Welcome to BadStore.net v1.2.3s
+| ssl-cert: Subject: commonName=www.badstore.net/organizationName=BadStore.net/stateOrProvinceName=Illinois/countryName=US
+| Subject Alternative Name: email:root@badstore.net
+| Not valid before: 2006-05-10T12:52:53
+|_Not valid after:  2009-02-02T12:52:53
+|_ssl-date: 2017-09-09T17:36:20+00:00; -1m23s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_IDEA_128_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_RC4_64_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|_    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+3306/tcp open  mysql    MySQL 4.1.7-standard
+| mysql-info: 
+|   Protocol: 10
+|   Version: 4.1.7-standard
+|   Thread ID: 5
+|   Capabilities flags: 33324
+|   Some Capabilities: Support41Auth, SupportsCompression, LongColumnFlag, ConnectWithDatabase, Speaks41ProtocolNew
+|   Status: Autocommit
+|_  Salt: t29fu;dgW\LESU01B7.~
+MAC Address: 00:0C:29:56:C3:E6 (VMware)
+Device type: general purpose
+Running: Linux 2.4.X
+OS CPE: cpe:/o:linux:linux_kernel:2.4
+OS details: Linux 2.4.18 - 2.4.35 (likely embedded)
+Network Distance: 1 hop
+
+Host script results:
+|_clock-skew: mean: -1m23s, deviation: 0s, median: -1m23s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   4.33 ms 192.168.1.70
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.50 seconds

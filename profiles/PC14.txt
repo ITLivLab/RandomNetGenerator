@@ -1,0 +1,47 @@
+
+Starting Nmap 7.50 ( https://nmap.org ) at 2017-09-09 13:08 Eastern Daylight Time
+Nmap scan report for 192.168.1.14
+Host is up (0.0031s latency).
+Not shown: 989 filtered ports
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware ESXi Server httpd
+|_http-title: Did not follow redirect to https://192.168.1.14/
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware ESXi Server httpd
+|_http-title: " + ID_EESX_Welcome + "
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:localhost.localdomain
+| Not valid before: 2017-02-04T12:53:46
+|_Not valid after:  2028-08-05T12:53:46
+|_ssl-date: TLS randomness does not represent time
+| vmware-version: 
+|   Server version: VMware ESXi 6.0.0
+|   Build: 3620759
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp open   ssl/wbem        SBLIM Small Footprint CIM Broker
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:localhost.localdomain
+| Not valid before: 2017-02-04T12:53:46
+|_Not valid after:  2028-08-05T12:53:46
+|_ssl-date: TLS randomness does not represent time
+8000/tcp open   http-alt?
+8080/tcp closed http-proxy
+8100/tcp open   tcpwrapped
+8300/tcp open   tmi?
+MAC Address: 00:18:8B:46:82:1A (Dell)
+Aggressive OS guesses: VMware ESXi 6.0.0 (96%), VMware ESXi 5.5 (94%), VMware ESXi 5.0 - 5.5 (93%), VMware ESXi 4.1.0 (92%), Crestron XPanel control system (92%), VMware ESXi 4.1 (92%), Linux 2.6.24 (89%), Epson Stylus Pro 400 printer (89%), FreeBSD 7.0-RELEASE-p1 - 10.0-CURRENT (88%), NAS4Free (FreeBSD 9.1) (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: Host: burrito.livlab.internal; CPE: cpe:/o:vmware:esxi
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   3.07 ms 192.168.1.14
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 154.81 seconds

@@ -1,0 +1,36 @@
+
+Starting Nmap 7.50 ( https://nmap.org ) at 2017-09-09 13:35 Eastern Daylight Time
+Nmap scan report for 192.168.1.66
+Host is up (0.0041s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE VERSION
+8000/tcp open  http    WSGIServer 0.1 (Python 2.7.12)
+| http-auth: 
+| HTTP/1.0 401 UNAUTHORIZED\x0D
+|   Basic realm='Secure
+|_  Area'
+|_http-server-header: WSGIServer/0.1 Python/2.7.12
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+8080/tcp open  http    BaseHTTPServer 0.3 (Python 2.7.12)
+MAC Address: 6E:E7:35:96:55:FF (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.50%E=4%D=9/9%OT=8000%CT=1%CU=33747%PV=Y%DS=1%DC=D%G=Y%M=6EE735%
+OS:TM=59B4268B%P=i686-pc-windows-windows)SEQ(SP=FD%GCD=1%ISR=110%TI=Z%CI=I%
+OS:II=I%TS=8)SEQ(CI=I%II=I%TS=9)SEQ(TI=Z%CI=I%II=I%TS=B)OPS(O1=M5B4ST11NW7%
+OS:O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST11NW7%O6=M5B4ST11
+OS:)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W
+OS:=7210%O=M5B4%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=
+OS:N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A
+OS:=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%D
+OS:F=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL
+OS:=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   4.07 ms 192.168.1.66
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 24.46 seconds

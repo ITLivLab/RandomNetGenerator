@@ -1,0 +1,53 @@
+
+Starting Nmap 7.50 ( https://nmap.org ) at 2017-09-09 13:51 Eastern Daylight Time
+Nmap scan report for 192.168.1.106
+Host is up (0.0026s latency).
+Not shown: 994 filtered ports
+PORT    STATE SERVICE         VERSION
+135/tcp open  msrpc           Microsoft Windows RPC
+139/tcp open  netbios-ssn     Microsoft Windows netbios-ssn
+443/tcp open  ssl/http        VMware VirtualCenter Web service
+|_http-title: Site doesn't have a title (text; charset=plain).
+| ssl-cert: Subject: commonName=VMware/countryName=US
+| Not valid before: 2017-07-14T20:11:41
+|_Not valid after:  2018-07-14T20:11:41
+|_ssl-date: TLS randomness does not represent time
+| vmware-version: 
+|   Server version: VMware Workstation 12.5.0
+|   Build: 4352439
+|   Locale version: INTL  
+|   OS type: win32-x86
+|_  Product Line ID: ws
+445/tcp open  microsoft-ds    Windows 10 Enterprise 15063 microsoft-ds (workgroup: WORKGROUP)
+902/tcp open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+MAC Address: 10:60:4B:7B:09:11 (Hewlett Packard)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Microsoft Windows Server 2008 SP1 (90%), Microsoft Windows 10 build 10586 - 14393 (88%), Microsoft Windows Phone 7.5 or 8.0 (88%), Microsoft Windows 10 build 14393 (87%), Microsoft Windows 10 build 10586 (87%), Microsoft Windows Server 2008 R2 or Windows 8.1 (87%), Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (87%), FreeBSD 6.2-RELEASE (87%), Microsoft Windows Embedded Standard 7 (86%), Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: Host: IN-CIT-ET007-19; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -4s, deviation: 0s, median: -4s
+|_nbstat: NetBIOS name: IN-CIT-ET007-19, NetBIOS user: <unknown>, NetBIOS MAC: 10:60:4b:7b:09:11 (Hewlett Packard)
+| smb-os-discovery: 
+|   OS: Windows 10 Enterprise 15063 (Windows 10 Enterprise 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: IN-CIT-ET007-19
+|   NetBIOS computer name: IN-CIT-ET007-19\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2017-09-09T13:52:06-04:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smbv2-enabled: Server supports SMBv2 protocol
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   2.64 ms 192.168.1.106
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 66.73 seconds

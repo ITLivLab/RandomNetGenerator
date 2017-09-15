@@ -1,0 +1,23 @@
+
+Starting Nmap 7.50 ( https://nmap.org ) at 2017-09-09 13:24 Eastern Daylight Time
+Nmap scan report for 192.168.1.52
+Host is up (0.0034s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.16 ((Debian))
+|_http-server-header: Apache/2.2.16 (Debian)
+|_http-title: Call for Papers for Web Security 3000
+MAC Address: 00:0C:29:50:80:B6 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.32 - 2.6.35
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   3.38 ms 192.168.1.52
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 18.90 seconds
